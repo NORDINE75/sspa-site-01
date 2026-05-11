@@ -326,4 +326,22 @@ footer {
     font-size: 16px;
     padding: 20px;
   }
+
+.slogan {
+    font-size: 12px;
+    line-height: 1.2;
 }
+
+.logo img {
+    height: 60px;
+}
+
+.navbar {
+    padding: 10px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+

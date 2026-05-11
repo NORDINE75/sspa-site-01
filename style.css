@@ -328,6 +328,18 @@ footer {
     padding: 20px;
   }
 
+.logo {
+    width: 100%;
+    justify-content: center;
+}
+
+.slogan {
+    max-width: 200px;
+}
+
+.menu {
+    width: 100%;
+}
 
 body {
     overflow-x: hidden;

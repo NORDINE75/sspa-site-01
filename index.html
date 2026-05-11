@@ -78,5 +78,37 @@ function showSlide() {
 
 setInterval(showSlide, 5000); // 5 secondes
 </script>
+
+<section class="reviews">
+  <h2>Avis clients</h2>
+
+  <div class="review-slider">
+    <div class="review active">⭐️⭐️⭐️⭐️⭐️ “Très bon service, pièces de qualité.”<br><strong>- Client Google</strong></div>
+    <div class="review">⭐️⭐️⭐️⭐️⭐️ “Rapide, sérieux et prix corrects.”<br><strong>- Client Google</strong></div>
+    <div class="review">⭐️⭐️⭐️⭐️⭐️ “Je recommande SSPA sans hésiter.”<br><strong>- Client Google</strong></div>
+  </div>
+
+  <a class="review-button" href="https://g.page/r/CQpcwaKvVssKEAE/review" target="_blank">
+    Laisser un avis Google
+  </a>
+</section>
+
+<script>
+
+let reviews = document.querySelectorAll(".review");
+let current = 0;
+
+setInterval(() => {
+
+reviews[current].classList.remove("active");
+
+current = (current + 1) % reviews.length;
+
+reviews[current].classList.add("active");
+
+}, 4000);
+
+</script>
 </body>
 </html>
+

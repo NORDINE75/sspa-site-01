@@ -373,10 +373,15 @@ footer {
     padding: 25px;
   }
 
-  .popup-title,
-  .popup-content h2 {
-    font-size: 28px;
-  }
+ .popup-title,
+.popup-content h2 {
+  color: #ffcc00;
+  font-size: 34px;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 1.2;
+  white-space: nowrap;
+}
 
   .popup-content p {
     font-size: 17px;

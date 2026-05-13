@@ -11,27 +11,30 @@
 <div id="promo-popup">
   <div class="popup-content">
 
-<h2>🔥 OFFRE SPÉCIALE SSPA 🔥</h2>
+<h2 class="popup-title">
+  🔥 OFFRE SPÉCIALE SSPA 🔥
+</h2>
 
 <p>
   Profitez de <strong>-10%</strong>
   dès <strong>100€ d’achat</strong>
 </p>
 
-<p>
+<p id="promo-code" style="display:none;">
   Code promo :
   <span style="color:#ffcc00;font-weight:bold;">
     SSPA10
   </span>
 </p>
 
-<a href="#produits" class="promo-btn">
+<button class="promo-btn" onclick="showPromoCode()">
   J’en profite
-</a>
-    <button onclick="document.getElementById('promo-popup').style.display='none'" class="close-btn">
-      Fermer
-    </button>
-  </div>
+</button>
+
+<button onclick="document.getElementById('promo-popup').style.display='none'" class="close-btn">
+  Fermer
+</button> 
+
 </div>
 
 <nav class="navbar">
@@ -134,7 +137,19 @@ reviews[current].classList.add("active");
 
 }, 4000);
 
+<script>
+function showPromoCode() {
+
+  document.getElementById("promo-code").style.display = "block";
+
+  navigator.clipboard.writeText("SSPA10");
+
+  alert("Code promo copié : SSPA10");
+}
 </script>
+
+</body>
+</html>
 
 </body>
 </html>

@@ -368,4 +368,7 @@ footer {
   .popup-content p {
     font-size: 17px;
   }
+.popup-title{
+    text-align:center;
+    line-height:1.3;
 }

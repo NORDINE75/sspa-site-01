@@ -6,45 +6,33 @@
   <title>SSPA - Pièces Auto</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <div id="promo-popup">
   <div class="popup-content">
+    <h2 class="popup-title">🔥 OFFRE SPÉCIALE SSPA 🔥</h2>
 
-<h2 class="popup-title">
-  🔥 OFFRE SPÉCIALE SSPA 🔥
-</h2>
+    <p>Profitez de <strong>-10%</strong> dès <strong>100€ d’achat</strong></p>
 
-<p>
-  Profitez de <strong>-10%</strong>
-  dès <strong>100€ d’achat</strong>
-</p>
+    <p id="promo-code" style="display:none;">
+      Code promo : <span style="color:#ffcc00;font-weight:bold;">SSPA10</span>
+    </p>
 
-<p id="promo-code" style="display:none;">
-  Code promo :
-  <span style="color:#ffcc00;font-weight:bold;">
-    SSPA10
-  </span>
-</p>
+    <button class="promo-btn" onclick="showPromoCode()">J’en profite</button>
 
-<button class="promo-btn" onclick="showPromoCode()">
-  J’en profite
-</button>
-
-<button onclick="document.getElementById('promo-popup').style.display='none'" class="close-btn">
-  Fermer
-</button> 
-
+    <button onclick="document.getElementById('promo-popup').style.display='none'" class="close-btn">
+      Fermer
+    </button>
+  </div>
 </div>
 
 <nav class="navbar">
   <div class="logo">
     <img src="images/logo.jpg" alt="SSPA">
+    <span class="slogan">L’ESSENTIEL POUR VOTRE AUTO</span>
+  </div>
 
-    <span class="slogan">
-        L’ESSENTIEL POUR VOTRE AUTO
-    </span>
-</div>
   <div class="menu">
     <a href="#accueil">Accueil</a>
     <a href="#produits">Produits</a>
@@ -53,9 +41,9 @@
   </div>
 </nav>
 
-<section class="slider">
-  <img src="images/banner.jpg" class="slide active">
-  <img src="images/banner2.jpg" class="slide">
+<section id="accueil" class="slider">
+  <img src="images/banner.jpg" class="slide active" alt="Bannière SSPA">
+  <img src="images/banner2.jpg" class="slide" alt="Bannière SSPA">
 </section>
 
 <section id="produits" class="section">
@@ -74,6 +62,20 @@
 <section id="services" class="section dark">
   <h2>Pourquoi choisir SSPA ?</h2>
   <p>Pièces de qualité, prix imbattables, service rapide et confiance garantie.</p>
+</section>
+
+<section class="reviews">
+  <h2>Avis clients</h2>
+
+  <div class="review-slider">
+    <div class="review active">⭐️⭐️⭐️⭐️⭐️ “Très bon service, pièces de qualité.”<br><strong>- Client Google</strong></div>
+    <div class="review">⭐️⭐️⭐️⭐️⭐️ “Rapide, sérieux et prix corrects.”<br><strong>- Client Google</strong></div>
+    <div class="review">⭐️⭐️⭐️⭐️⭐️ “Je recommande SSPA sans hésiter.”<br><strong>- Client Google</strong></div>
+  </div>
+
+  <a class="review-button" href="https://g.page/r/CQpcwaKvVssKEAE/review" target="_blank">
+    Laisser un avis Google
+  </a>
 </section>
 
 <section id="contact" class="section contact">
@@ -105,51 +107,23 @@ function showSlide() {
   }
 }
 
-setInterval(showSlide, 5000); // 5 secondes
-</script>
-
-<section class="reviews">
-  <h2>Avis clients</h2>
-
-  <div class="review-slider">
-    <div class="review active">⭐️⭐️⭐️⭐️⭐️ “Très bon service, pièces de qualité.”<br><strong>- Client Google</strong></div>
-    <div class="review">⭐️⭐️⭐️⭐️⭐️ “Rapide, sérieux et prix corrects.”<br><strong>- Client Google</strong></div>
-    <div class="review">⭐️⭐️⭐️⭐️⭐️ “Je recommande SSPA sans hésiter.”<br><strong>- Client Google</strong></div>
-  </div>
-
-  <a class="review-button" href="https://g.page/r/CQpcwaKvVssKEAE/review" target="_blank">
-    Laisser un avis Google
-  </a>
-</section>
-
-<script>
+setInterval(showSlide, 5000);
 
 let reviews = document.querySelectorAll(".review");
 let current = 0;
 
 setInterval(() => {
-
-reviews[current].classList.remove("active");
-
-current = (current + 1) % reviews.length;
-
-reviews[current].classList.add("active");
-
+  reviews[current].classList.remove("active");
+  current = (current + 1) % reviews.length;
+  reviews[current].classList.add("active");
 }, 4000);
 
-<script>
 function showPromoCode() {
-
   document.getElementById("promo-code").style.display = "block";
-
   navigator.clipboard.writeText("SSPA10");
-
   alert("Code promo copié : SSPA10");
 }
 </script>
-
-</body>
-</html>
 
 </body>
 </html>

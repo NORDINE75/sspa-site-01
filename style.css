@@ -369,34 +369,54 @@ body {
   box-shadow: 0 0 30px rgba(255,204,0,0.5);
 }
 
-.popup-content h2 {
-  color: #ffcc00;
-  margin-bottom: 20px;
+.popup-content h2{
+    color:#ffcc00;
+    font-size:42px;
+    margin-bottom:20px;
 }
 
-.popup-content p {
-  color: white;
-  margin-bottom: 25px;
+.popup-content p{
+    color:white;
+    font-size:22px;
+    margin-bottom:20px;
 }
 
-.promo-btn {
-  display: inline-block;
-  background: #ffcc00;
-  color: black;
-  padding: 12px 25px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  margin-bottom: 15px;
+.promo-btn{
+    display:inline-block;
+    background:#ffcc00;
+    color:black;
+    padding:15px 35px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:20px;
+    margin-top:15px;
 }
 
-.close-btn {
-  display: block;
-  margin: auto;
-  background: transparent;
-  color: white;
-  border: 1px solid #ffcc00;
-  padding: 10px 20px;
-  border-radius: 20px;
-  cursor: pointer;
+.close-btn{
+    margin-top:20px;
+    background:transparent;
+    border:2px solid #ffcc00;
+    color:white;
+    padding:10px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.close-btn:hover{
+    background:#ffcc00;
+    color:black;
+}
+
+@keyframes popupFade{
+    from{
+        transform:scale(0.7);
+        opacity:0;
+    }
+
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
 }

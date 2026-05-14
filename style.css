@@ -1,6 +1,16 @@
-* { box-sizing: border-box; scroll-behavior: smooth; }
-img { max-width: 100%; }
-html, body { overflow-x: hidden; }
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
 
 body {
   margin: 0;
@@ -8,6 +18,8 @@ body {
   background: #080808;
   color: white;
 }
+
+/* NAVBAR */
 
 .navbar {
   background: #0a0a0a;
@@ -24,7 +36,11 @@ body {
   gap: 15px;
 }
 
-.logo img { height: 70px; width: auto; display: block; }
+.logo img {
+  height: 70px;
+  width: auto;
+  display: block;
+}
 
 .slogan {
   color: #ffcc00;
@@ -34,7 +50,11 @@ body {
   text-transform: uppercase;
 }
 
-.menu { display: flex; align-items: center; gap: 8px; }
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 
 .menu a {
   color: white;
@@ -51,6 +71,8 @@ body {
   box-shadow: 0 0 15px rgba(255, 204, 0, 0.5);
 }
 
+/* SLIDER */
+
 .slider {
   width: 95%;
   max-width: 1200px;
@@ -59,8 +81,17 @@ body {
   border-radius: 15px;
 }
 
-.slide { width: 100%; display: none; border-radius: 15px; }
-.slide.active { display: block; }
+.slide {
+  width: 100%;
+  display: none;
+  border-radius: 15px;
+}
+
+.slide.active {
+  display: block;
+}
+
+/* SECTIONS */
 
 .section {
   padding: 70px 8%;
@@ -69,13 +100,18 @@ body {
 
 .section h2,
 .advantages h2,
-.reviews h2 {
+.reviews h2,
+.map-section h2 {
   color: #ffcc00;
   font-size: 36px;
   margin-bottom: 30px;
 }
 
-.dark { background: #111; }
+.dark {
+  background: #111;
+}
+
+/* PRODUITS */
 
 .cards {
   display: grid;
@@ -100,6 +136,8 @@ body {
   box-shadow: 0 0 15px rgba(255, 204, 0, 0.35);
 }
 
+/* AVANTAGES */
+
 .advantages {
   padding: 70px 8%;
   background: #0b0b0b;
@@ -117,13 +155,13 @@ body {
   border: 2px solid #ffcc00;
   border-radius: 20px;
   padding: 35px 20px;
-  box-shadow: 0 0 20px rgba(255,204,0,0.15);
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.15);
   transition: 0.3s;
 }
 
 .advantage-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 0 30px rgba(255,204,0,0.4);
+  box-shadow: 0 0 30px rgba(255, 204, 0, 0.4);
 }
 
 .advantage-card h3 {
@@ -137,7 +175,13 @@ body {
   font-size: 16px;
 }
 
-.contact p { font-size: 20px; }
+/* CONTACT */
+
+.contact p {
+  font-size: 20px;
+}
+
+/* BOUTONS */
 
 .btn,
 .review-button,
@@ -151,9 +195,26 @@ body {
   cursor: pointer;
 }
 
-.btn { margin-top: 20px; padding: 14px 25px; border-radius: 8px; }
-.review-button { margin-top: 25px; padding: 14px 30px; border-radius: 40px; }
-.promo-btn { padding: 15px 30px; border-radius: 40px; font-size: 18px; margin-top: 10px; }
+.btn {
+  margin-top: 20px;
+  padding: 14px 25px;
+  border-radius: 8px;
+}
+
+.review-button {
+  margin-top: 25px;
+  padding: 14px 30px;
+  border-radius: 40px;
+}
+
+.promo-btn {
+  padding: 15px 30px;
+  border-radius: 40px;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* AVIS */
 
 .reviews {
   background: #0d0d0d;
@@ -175,10 +236,14 @@ body {
   padding: 30px;
   color: white;
   font-size: 20px;
-  box-shadow: 0 0 20px rgba(255,204,0,0.25);
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.25);
 }
 
-.review.active { display: block; }
+.review.active {
+  display: block;
+}
+
+/* WHATSAPP */
 
 .whatsapp {
   position: fixed;
@@ -190,33 +255,69 @@ body {
   padding: 14px 18px;
   border-radius: 40px;
   text-decoration: none;
-  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   z-index: 999;
 }
 
-#promo-popup{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background:rgba(0,0,0,0.85);
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  z-index:9999;
-  padding:20px;
+/* POPUP PROMO */
+
+#promo-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 20px;
 }
 
-.promo-image{
-  width:85%;
-  max-width:900px;
-  max-height:85vh;
-  object-fit:contain;
-  border-radius:20px;
-  cursor:pointer;
-  box-shadow:0 0 40px rgba(255,204,0,0.4);
+.promo-box {
+  position: relative;
 }
+
+.promo-image {
+  width: 85%;
+  max-width: 900px;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(255, 204, 0, 0.4);
+}
+
+.promo-close {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background: #ffcc00;
+  color: #000;
+  border: none;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+/* MAP */
+
+.map-section {
+  padding: 60px 8%;
+  background: #0d0d0d;
+  text-align: center;
+}
+
+.map-section iframe {
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(255, 204, 0, 0.2);
+}
+
+/* FOOTER */
 
 footer {
   background: #050505;
@@ -225,30 +326,16 @@ footer {
   border-top: 1px solid #333;
 }
 
-.seo-text{
-  color:#777;
-  font-size:14px;
-  margin-bottom:10px;
+.seo-text {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 
-.map-section{
-  padding:60px 8%;
-  background:#0d0d0d;
-  text-align:center;
-}
-
-.map-section h2{
-  color:#ffcc00;
-  font-size:36px;
-  margin-bottom:30px;
-}
-
-.map-section iframe{
-  border-radius:20px;
-  box-shadow:0 0 25px rgba(255,204,0,0.2);
-}
+/* MOBILE */
 
 @media (max-width: 700px) {
+
   .navbar {
     flex-direction: column;
     padding: 12px 10px;
@@ -288,8 +375,16 @@ footer {
     padding: 8px 10px;
   }
 
-  .slider { width: 95%; margin: 20px auto; }
-  .section, .advantages, .map-section { padding: 35px 15px; }
+  .slider {
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  .section,
+  .advantages,
+  .map-section {
+    padding: 35px 15px;
+  }
 
   .section h2,
   .advantages h2,
@@ -314,27 +409,16 @@ footer {
     padding: 12px 14px;
   }
 
-  .promo-image{
-    width:95%;
-    max-height:80vh;
+  .promo-image {
+    width: 95%;
+    max-height: 80vh;
   }
 
-.promo-box{
-  position:relative;
-}
-
-.promo-close{
-  position:absolute;
-  top:-15px;
-  right:-15px;
-  background:#ffcc00;
-  color:#000;
-  border:none;
-  border-radius:50%;
-  width:40px;
-  height:40px;
-  font-size:28px;
-  font-weight:bold;
-  cursor:pointer;
-  z-index:10000;
+  .promo-close {
+    top: -10px;
+    right: -10px;
+    width: 38px;
+    height: 38px;
+    font-size: 26px;
+  }
 }

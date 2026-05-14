@@ -340,3 +340,20 @@ footer {
   font-size:14px;
   margin-bottom:10px;
 }
+
+.map-section{
+  padding:60px 8%;
+  background:#0d0d0d;
+  text-align:center;
+}
+
+.map-section h2{
+  color:#ffcc00;
+  font-size:36px;
+  margin-bottom:30px;
+}
+
+.map-section iframe{
+  border-radius:20px;
+  box-shadow:0 0 25px rgba(255,204,0,0.2);
+}

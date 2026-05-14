@@ -77,8 +77,19 @@
   <h2>Demande de devis rapide</h2>
   <p>Remplissez le formulaire, nous vous répondons rapidement.</p>
 
-  <form name="devis-sspa" method="POST" data-netlify="true" class="devis-form">
+  <form
+    name="devis-sspa"
+    method="POST"
+    data-netlify="true"
+    netlify-honeypot="bot-field"
+    action="/merci.html"
+    class="devis-form">
+
     <input type="hidden" name="form-name" value="devis-sspa">
+
+    <p hidden>
+      <input name="bot-field">
+    </p>
 
     <div class="form-row">
       <input type="text" name="nom" placeholder="Nom" required>
@@ -97,6 +108,7 @@
     <textarea name="message" placeholder="Message complémentaire"></textarea>
 
     <button type="submit">Envoyer ma demande</button>
+
   </form>
 </section>
 

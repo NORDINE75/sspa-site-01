@@ -10,21 +10,7 @@
 <body>
 
 <div id="promo-popup">
-  <div class="popup-content">
-    <h2 class="popup-title"><h2 class="popup-title">🔥 PROMO SSPA 🔥</h2>
-
-    <p>Profitez de <strong>-10%</strong> dès <strong>100€ d’achat</strong></p>
-
-    <p id="promo-code" style="display:none;">
-      Code promo : <span style="color:#ffcc00;font-weight:bold;">SSPA10</span>
-    </p>
-
-    <button class="promo-btn" onclick="showPromoCode()">J’en profite</button>
-
-    <button onclick="document.getElementById('promo-popup').style.display='none'" class="close-btn">
-      Fermer
-    </button>
-  </div>
+  <img src="images/promo.jpg" class="promo-image" onclick="closePopup()">
 </div>
 
 <nav class="navbar">
@@ -139,11 +125,21 @@ setInterval(() => {
   reviews[current].classList.add("active");
 }, 4000);
 
-function showPromoCode() {
-  document.getElementById("promo-code").style.display = "block";
-  navigator.clipboard.writeText("SSPA10");
-  alert("Code promo copié : SSPA10");
+<script>
+
+let reviews = document.querySelectorAll(".review");
+let current = 0;
+
+setInterval(() => {
+  reviews[current].classList.remove("active");
+  current = (current + 1) % reviews.length;
+  reviews[current].classList.add("active");
+}, 4000);
+
+function closePopup(){
+  document.getElementById("promo-popup").style.display = "none";
 }
+
 </script>
 
 </body>

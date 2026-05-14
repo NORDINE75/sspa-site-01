@@ -74,17 +74,18 @@ body {
 /* SLIDER */
 
 .slider {
-  width: 95%;
-  max-width: 1200px;
-  margin: 30px auto;
+  width: 82%;
+  max-width: 900px;
+  margin: 25px auto 50px;
   overflow: hidden;
-  border-radius: 15px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(255,204,0,0.15);
 }
 
 .slide {
   width: 100%;
   display: none;
-  border-radius: 15px;
+  border-radius: 20px;
 }
 
 .slide.active {

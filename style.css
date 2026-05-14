@@ -194,63 +194,28 @@ body {
   z-index: 999;
 }
 
-#promo-popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.85);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
+#promo-popup{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.85);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+  padding:20px;
 }
 
-.popup-content {
-  background: #111;
-  border: 3px solid #ffcc00;
-  padding: 40px;
-  border-radius: 20px;
-  text-align: center;
-  width: 90%;
-  max-width: 450px;
-  box-shadow: 0 0 30px rgba(255,204,0,0.5);
-  animation: popupFade 0.4s ease;
-}
-
-.popup-title,
-.popup-content h2 {
-  color: #ffcc00;
-  font-size: 34px;
-  margin-bottom: 20px;
-  text-align: center;
-  line-height: 1.2;
-}
-
-.popup-content p {
-  color: white;
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
-.close-btn {
-  display: block;
-  margin: 20px auto 0;
-  background: transparent;
-  border: 2px solid #ffcc00;
-  color: white;
-  padding: 10px 25px;
-  border-radius: 30px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.close-btn:hover { background: #ffcc00; color: black; }
-
-@keyframes popupFade {
-  from { transform: scale(0.7); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+.promo-image{
+  width:85%;
+  max-width:900px;
+  max-height:85vh;
+  object-fit:contain;
+  border-radius:20px;
+  cursor:pointer;
+  box-shadow:0 0 40px rgba(255,204,0,0.4);
 }
 
 footer {
@@ -258,6 +223,29 @@ footer {
   text-align: center;
   padding: 25px;
   border-top: 1px solid #333;
+}
+
+.seo-text{
+  color:#777;
+  font-size:14px;
+  margin-bottom:10px;
+}
+
+.map-section{
+  padding:60px 8%;
+  background:#0d0d0d;
+  text-align:center;
+}
+
+.map-section h2{
+  color:#ffcc00;
+  font-size:36px;
+  margin-bottom:30px;
+}
+
+.map-section iframe{
+  border-radius:20px;
+  box-shadow:0 0 25px rgba(255,204,0,0.2);
 }
 
 @media (max-width: 700px) {
@@ -301,11 +289,12 @@ footer {
   }
 
   .slider { width: 95%; margin: 20px auto; }
-  .section, .advantages { padding: 35px 15px; }
+  .section, .advantages, .map-section { padding: 35px 15px; }
 
   .section h2,
   .advantages h2,
-  .reviews h2 {
+  .reviews h2,
+  .map-section h2 {
     font-size: 28px;
   }
 
@@ -325,56 +314,8 @@ footer {
     padding: 12px 14px;
   }
 
-  .popup-content { padding: 25px; }
-
-  .popup-title,
-  .popup-content h2 {
-    font-size: 27px;
+  .promo-image{
+    width:95%;
+    max-height:80vh;
   }
-
-  .popup-content p {
-    font-size: 17px;
-  }
-.seo-text{
-  color:#777;
-  font-size:14px;
-  margin-bottom:10px;
-}
-
-.map-section{
-  padding:60px 8%;
-  background:#0d0d0d;
-  text-align:center;
-}
-
-.map-section h2{
-  color:#ffcc00;
-  font-size:36px;
-  margin-bottom:30px;
-}
-
-.map-section iframe{
-  border-radius:20px;
-  box-shadow:0 0 25px rgba(255,204,0,0.2);
-}
-
-#promo-popup{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background:rgba(0,0,0,0.85);
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  z-index:9999;
-}
-
-.promo-image{
-  width:90%;
-  max-width:700px;
-  border-radius:20px;
-  cursor:pointer;
-  box-shadow:0 0 40px rgba(255,204,0,0.4);
 }

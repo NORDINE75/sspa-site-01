@@ -73,6 +73,33 @@
   </a>
 </section>
 
+<section id="devis" class="section devis-section">
+  <h2>Demande de devis rapide</h2>
+  <p>Remplissez le formulaire, nous vous répondons rapidement.</p>
+
+  <form name="devis-sspa" method="POST" data-netlify="true" class="devis-form">
+    <input type="hidden" name="form-name" value="devis-sspa">
+
+    <div class="form-row">
+      <input type="text" name="nom" placeholder="Nom" required>
+      <input type="text" name="prenom" placeholder="Prénom" required>
+    </div>
+
+    <div class="form-row">
+      <input type="tel" name="telephone" placeholder="Téléphone" required>
+      <input type="email" name="email" placeholder="Email">
+    </div>
+
+    <input type="text" name="immatriculation" placeholder="Immatriculation du véhicule">
+
+    <textarea name="pieces" placeholder="Pièces demandées : ex batterie, plaquettes, filtres..." required></textarea>
+
+    <textarea name="message" placeholder="Message complémentaire"></textarea>
+
+    <button type="submit">Envoyer ma demande</button>
+  </form>
+</section>
+
 <section id="contact" class="section contact">
   <h2>Contact</h2>
   <p>📞 01 59 49 00 35</p>

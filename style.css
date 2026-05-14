@@ -423,62 +423,90 @@ footer {
     font-size: 26px;
   }
 
-.devis-section {
-  background: #111;
+/* FORMULAIRE DEVIS */
+
+.devis-section{
+  padding:70px 8%;
+  background:#0d0d0d;
+  text-align:center;
 }
 
-.devis-section p {
-  color: #ddd;
-  margin-bottom: 25px;
+.devis-section h2{
+  color:#ffcc00;
+  font-size:42px;
+  margin-bottom:15px;
 }
 
-.devis-form {
-  max-width: 800px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.devis-section p{
+  color:#ddd;
+  margin-bottom:35px;
+  font-size:18px;
 }
 
-.form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
+.devis-form{
+  max-width:900px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.form-row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
 }
 
 .devis-form input,
-.devis-form textarea {
-  width: 100%;
-  background: #151515;
-  border: 1px solid #ffcc00;
-  color: white;
-  padding: 15px;
-  border-radius: 12px;
-  font-size: 16px;
+.devis-form textarea{
+  width:100%;
+  background:#151515;
+  border:2px solid #ffcc00;
+  color:white;
+  padding:18px;
+  border-radius:16px;
+  font-size:16px;
+  outline:none;
+  transition:0.3s;
 }
 
-.devis-form textarea {
-  min-height: 120px;
-  resize: vertical;
+.devis-form input:focus,
+.devis-form textarea:focus{
+  box-shadow:0 0 20px rgba(255,204,0,0.35);
 }
 
-.devis-form button {
-  background: #ffcc00;
-  color: black;
-  border: none;
-  padding: 16px;
-  border-radius: 40px;
-  font-weight: bold;
-  font-size: 18px;
-  cursor: pointer;
+.devis-form textarea{
+  min-height:140px;
+  resize:vertical;
 }
 
-.devis-form button:hover {
-  box-shadow: 0 0 25px rgba(255,204,0,0.45);
+.devis-form button{
+  background:#ffcc00;
+  color:black;
+  border:none;
+  padding:18px;
+  border-radius:50px;
+  font-weight:bold;
+  font-size:20px;
+  cursor:pointer;
+  transition:0.3s;
 }
 
-@media (max-width: 700px) {
-  .form-row {
-    grid-template-columns: 1fr;
+.devis-form button:hover{
+  transform:translateY(-3px);
+  box-shadow:0 0 25px rgba(255,204,0,0.5);
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+  .form-row{
+    grid-template-columns:1fr;
   }
+
+  .devis-section h2{
+    font-size:32px;
+  }
+
 }

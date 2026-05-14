@@ -318,4 +318,23 @@ footer {
     width:95%;
     max-height:80vh;
   }
+
+.promo-box{
+  position:relative;
+}
+
+.promo-close{
+  position:absolute;
+  top:-15px;
+  right:-15px;
+  background:#ffcc00;
+  color:#000;
+  border:none;
+  border-radius:50%;
+  width:40px;
+  height:40px;
+  font-size:28px;
+  font-weight:bold;
+  cursor:pointer;
+  z-index:10000;
 }

@@ -227,6 +227,12 @@ body {
   font-size: 18px;
 }
 
+/* ESPACE ENTRE AVIS ET BOUTON */
+
+.review-button {
+  margin-top: 55px;
+}
+
 .review-button:hover,
 .devis-form button:hover,
 .btn:hover {

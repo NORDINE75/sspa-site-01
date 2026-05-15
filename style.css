@@ -463,45 +463,55 @@ footer {
     padding: 12px 14px;
   }
 
-/* MARQUES */
+/* =========================
+   MARQUES
+========================= */
 
-.brands {
-  padding: 70px 20px;
-  background: #080808;
-  text-align: center;
+.brands{
+  padding:80px 20px;
+  background:#0b0b0b;
+  text-align:center;
 }
 
-.brands h2 {
-  color: #ffcc00;
-  font-size: 42px;
-  margin-bottom: 40px;
+.brands h2{
+  color:#ffcc00;
+  font-size:42px;
+  margin-bottom:45px;
 }
 
-.brands-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
-  max-width: 1100px;
-  margin: auto;
+.brands-grid{
+  max-width:1200px;
+  margin:auto;
+
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:25px;
 }
 
-.brand {
-  background: #151515;
-  border: 2px solid #ffcc00;
-  border-radius: 18px;
-  padding: 25px;
-  font-size: 24px;
-  font-weight: bold;
-  color: white;
-  transition: 0.3s;
-  box-shadow: 0 0 20px rgba(255,204,0,0.12);
+.brand{
+  background:#151515;
+  border:2px solid #ffcc00;
+  border-radius:20px;
+
+  padding:30px 20px;
+
+  font-size:26px;
+  font-weight:bold;
+  color:white;
+
+  transition:0.3s;
+
+  box-shadow:0 0 20px rgba(255,204,0,0.15);
 }
 
-.brand:hover {
-  transform: translateY(-5px);
-  color: #ffcc00;
-  box-shadow: 0 0 30px rgba(255,204,0,0.35);
+.brand:hover{
+  transform:translateY(-6px);
+  color:#ffcc00;
+
+  box-shadow:0 0 35px rgba(255,204,0,0.35);
 }
+
+/* MOBILE */
 
 @media (max-width:700px){
 
@@ -511,7 +521,7 @@ footer {
 
   .brand{
     font-size:20px;
-    padding:20px;
+    padding:22px;
   }
 
 }

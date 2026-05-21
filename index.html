@@ -20,7 +20,9 @@
   <div class="logo">
     <img src="images/logo.jpg" alt="SSPA">
     <span class="slogan">L’ESSENTIEL POUR VOTRE AUTO</span>
-  </div>
+  <div class="status-bar">
+  <span id="shop-status"></span>
+</div>
 
   <div class="menu">
     <a href="#accueil">Accueil</a>
@@ -190,7 +192,68 @@ setInterval(() => {
 
 function closePopup() {
   document.getElementById("promo-popup").style.display = "none";
+const status = document.getElementById("shop-status");
+
+function updateStatus() {
+
+  const now = new Date();
+
+  const day = now.getDay();
+  const hour = now.getHours();
+  const minutes = now.getMinutes();
+
+  const currentTime = hour + minutes / 60;
+
+  let open = false;
+
+  // Lundi à jeudi
+  if (day >= 1 && day <= 4) {
+
+    if (
+      (currentTime >= 9 && currentTime < 12) ||
+      (currentTime >= 14 && currentTime < 18)
+    ) {
+      open = true;
+    }
+  }
+
+  // Vendredi
+  if (day === 5) {
+
+    if (
+      (currentTime >= 9 && currentTime < 12.5) ||
+      (currentTime >= 14.5 && currentTime < 18)
+    ) {
+      open = true;
+    }
+  }
+
+  // Samedi
+  if (day === 6) {
+
+    if (currentTime >= 9 && currentTime < 14) {
+      open = true;
+    }
+  }
+
+  if (open) {
+
+    status.innerHTML =
+      "🟢 Ouvert actuellement • Lun-Jeu 9h-12h / 14h-18h • Ven 9h-12h30 / 14h30-18h • Sam 9h-14h • Dim fermé";
+
+    status.className = "open";
+
+  } else {
+
+    status.innerHTML =
+      "🔴 Fermé actuellement • Lun-Jeu 9h-12h / 14h-18h • Ven 9h-12h30 / 14h30-18h • Sam 9h-14h • Dim fermé";
+
+    status.className = "closed";
+  }
 }
+
+updateStatus();
+
 </script>
 
 </body>

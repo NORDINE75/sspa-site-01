@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="fr">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,6 +10,8 @@
 
 <body>
 
+<!-- POPUP -->
+
 <div id="promo-popup">
   <div class="promo-box">
     <button class="promo-close" onclick="closePopup()">×</button>
@@ -16,13 +19,14 @@
   </div>
 </div>
 
+<!-- NAVBAR -->
+
 <nav class="navbar">
+
   <div class="logo">
     <img src="images/logo.jpg" alt="SSPA">
     <span class="slogan">L’ESSENTIEL POUR VOTRE AUTO</span>
-  <div class="status-bar">
-  <span id="shop-status"></span>
-</div>
+  </div>
 
   <div class="menu">
     <a href="#accueil">Accueil</a>
@@ -30,101 +34,228 @@
     <a href="#services">Services</a>
     <a href="#contact">Contact</a>
   </div>
+
 </nav>
 
+<!-- OUVERT / FERME -->
+
+<div class="status-bar">
+  <span id="shop-status"></span>
+</div>
+
+<!-- SLIDER -->
+
 <section id="accueil" class="slider">
+
   <img src="images/banner.jpg" class="slide active" alt="Bannière SSPA">
+
   <img src="images/banner2.jpg" class="slide" alt="Bannière SSPA">
-  <img src="images/banner4.jpg" class="slide" alt="Bannière SSPA">
+
   <img src="images/banner3.jpg" class="slide" alt="Bannière SSPA">
+
+  <img src="images/banner4.jpg" class="slide" alt="Bannière SSPA">
+
 </section>
 
+<!-- PRODUITS -->
+
 <section id="produits" class="section">
+
   <h2>Nos Produits</h2>
 
   <div class="cards">
+
     <a href="images/filtre.jpg" target="_blank">Filtres</a>
+
     <a href="images/freinage.jpg" target="_blank">Freinage</a>
+
     <a href="images/suspension.jpg" target="_blank">Suspension</a>
+
     <a href="images/batterie.jpg" target="_blank">Batteries</a>
+
     <a href="images/huile.jpg" target="_blank">Huiles & Lubrifiants</a>
+
     <a href="images/pneu.jpg" target="_blank">Pneus</a>
+
   </div>
+
 </section>
 
+<!-- AVANTAGES -->
+
 <section class="advantages">
+
   <h2>Nos Avantages</h2>
 
   <div class="advantage-grid">
-    <div class="advantage-card">🚚<h3>Livraison rapide</h3><p>Expédition et retrait rapide.</p></div>
-    <div class="advantage-card">💬<h3>Support WhatsApp</h3><p>Réponse rapide pour vos pièces.</p></div>
-    <div class="advantage-card">💰<h3>Prix compétitifs</h3><p>Des tarifs pensés pour vous.</p></div>
-    <div class="advantage-card">✅<h3>Qualité garantie</h3><p>Des pièces fiables et sélectionnées.</p></div>
+
+    <div class="advantage-card">
+      🚚
+      <h3>Livraison rapide</h3>
+      <p>Expédition et retrait rapide.</p>
+    </div>
+
+    <div class="advantage-card">
+      💬
+      <h3>Support WhatsApp</h3>
+      <p>Réponse rapide pour vos pièces.</p>
+    </div>
+
+    <div class="advantage-card">
+      💰
+      <h3>Prix compétitifs</h3>
+      <p>Des tarifs pensés pour vous.</p>
+    </div>
+
+    <div class="advantage-card">
+      ✅
+      <h3>Qualité garantie</h3>
+      <p>Des pièces fiables et sélectionnées.</p>
+    </div>
+
   </div>
+
 </section>
 
+<!-- AVIS -->
+
 <section class="reviews">
+
   <h2>Avis clients</h2>
 
   <div class="review-slider">
-    <div class="review active">⭐️⭐️⭐️⭐️⭐️ “Très bon service, pièces de qualité.”<br><strong>- Client Google</strong></div>
-    <div class="review">⭐️⭐️⭐️⭐️⭐️ “Rapide, sérieux et prix corrects.”<br><strong>- Client Google</strong></div>
-    <div class="review">⭐️⭐️⭐️⭐️⭐️ “Je recommande SSPA sans hésiter.”<br><strong>- Client Google</strong></div>
+
+    <div class="review active">
+      ⭐️⭐️⭐️⭐️⭐️
+      “Très bon service, pièces de qualité.”
+      <br>
+      <strong>- Client Google</strong>
+    </div>
+
+    <div class="review">
+      ⭐️⭐️⭐️⭐️⭐️
+      “Rapide, sérieux et prix corrects.”
+      <br>
+      <strong>- Client Google</strong>
+    </div>
+
+    <div class="review">
+      ⭐️⭐️⭐️⭐️⭐️
+      “Je recommande SSPA sans hésiter.”
+      <br>
+      <strong>- Client Google</strong>
+    </div>
+
   </div>
 
-  <a class="review-button" href="https://g.page/r/CQpcwaKvVssKEAE/review" target="_blank">
-    Laisser un avis Google
+  <a class="review-button"
+     href="https://g.page/r/CQpcwaKvVssKEAE/review"
+     target="_blank">
+
+     Laisser un avis Google
+
   </a>
+
 </section>
 
+<!-- FORMULAIRE -->
+
 <section id="devis" class="section devis-section">
+
   <h2>Demande de devis rapide</h2>
-  <p>Remplissez le formulaire, nous vous répondons rapidement.</p>
 
- <form
-  name="devis-sspa"
-  method="POST"
-  data-netlify="true"
-  netlify-honeypot="bot-field"
-  action="/merci.html"
-  class="devis-form">
+  <p>
+    Remplissez le formulaire,
+    nous vous répondons rapidement.
+  </p>
 
+  <form
+    name="devis-sspa"
+    method="POST"
+    data-netlify="true"
+    netlify-honeypot="bot-field"
+    action="/merci.html"
+    class="devis-form">
 
-    <input type="hidden" name="form-name" value="devis-sspa">
+    <input type="hidden"
+           name="form-name"
+           value="devis-sspa">
 
     <p hidden>
       <input name="bot-field">
     </p>
 
     <div class="form-row">
-      <input type="text" name="nom" placeholder="Nom" required>
-      <input type="text" name="prenom" placeholder="Prénom" required>
+
+      <input type="text"
+             name="nom"
+             placeholder="Nom"
+             required>
+
+      <input type="text"
+             name="prenom"
+             placeholder="Prénom"
+             required>
+
     </div>
 
     <div class="form-row">
-      <input type="tel" name="telephone" placeholder="Téléphone" required>
-      <input type="email" name="email" placeholder="Email">
+
+      <input type="tel"
+             name="telephone"
+             placeholder="Téléphone"
+             required>
+
+      <input type="email"
+             name="email"
+             placeholder="Email">
+
     </div>
 
-    <input type="text" name="immatriculation" placeholder="Immatriculation du véhicule">
+    <input type="text"
+           name="immatriculation"
+           placeholder="Immatriculation du véhicule">
 
-    <textarea name="pieces" placeholder="Pièces demandées : ex batterie, plaquettes, filtres..." required></textarea>
+    <textarea
+      name="pieces"
+      placeholder="Pièces demandées : ex batterie, plaquettes, filtres..."
+      required></textarea>
 
-    <textarea name="message" placeholder="Message complémentaire"></textarea>
+    <textarea
+      name="message"
+      placeholder="Message complémentaire"></textarea>
 
-    <button type="submit">Envoyer ma demande</button>
+    <button type="submit">
+      Envoyer ma demande
+    </button>
 
   </form>
+
 </section>
+
+<!-- CONTACT -->
 
 <section id="contact" class="section contact">
+
   <h2>Contact</h2>
+
   <p>📞 01 59 49 00 35</p>
-  <p>📍 4 rue du 5 septembre 1914, 77165 Saint-Soupplets</p>
-  <a class="btn" href="tel:0159490035">Appeler maintenant</a>
+
+  <p>
+    📍 4 rue du 5 septembre 1914,
+    77165 Saint-Soupplets
+  </p>
+
+  <a class="btn" href="tel:0159490035">
+    Appeler maintenant
+  </a>
+
 </section>
 
+<!-- MAP -->
+
 <section class="map-section">
+
   <h2>Nous trouver</h2>
 
   <iframe
@@ -135,12 +266,17 @@
     allowfullscreen=""
     loading="lazy">
   </iframe>
+
 </section>
 
+<!-- MARQUES -->
+
 <section class="brands">
+
   <h2>Marques disponibles</h2>
 
   <div class="brands-grid">
+
     <div class="brand">BOSCH</div>
     <div class="brand">VALEO</div>
     <div class="brand">SKF</div>
@@ -151,29 +287,55 @@
     <div class="brand">MAXGEAR</div>
     <div class="brand">LUK</div>
     <div class="brand">SACHS</div>
+
   </div>
+
 </section>
 
+<!-- FOOTER -->
+
 <footer>
+
   <p class="seo-text">
-    Pièces auto à Saint-Soupplets • Batteries • Pneus • Freinage • Suspension • Filtres
+    Pièces auto à Saint-Soupplets •
+    Batteries • Pneus • Freinage •
+    Suspension • Filtres
   </p>
+
   © 2026 SSPA - Tous droits réservés
+
 </footer>
 
-<a href="https://wa.me/33159490035?text=Bonjour%20je%20souhaite%20un%20renseignement" class="whatsapp" target="_blank">
-  💬 WhatsApp
+<!-- WHATSAPP -->
+
+<a href="https://wa.me/33159490035?text=Bonjour%20je%20souhaite%20un%20renseignement"
+   class="whatsapp"
+   target="_blank">
+
+   💬 WhatsApp
+
 </a>
 
+<!-- SCRIPT -->
+
 <script>
+
+/* SLIDER */
+
 let slides = document.querySelectorAll(".slide");
+
 let index = 0;
 
 function showSlide() {
-  slides.forEach(slide => slide.classList.remove("active"));
+
+  slides.forEach(slide =>
+    slide.classList.remove("active")
+  );
+
   slides[index].classList.add("active");
 
   index++;
+
   if (index >= slides.length) {
     index = 0;
   }
@@ -181,17 +343,31 @@ function showSlide() {
 
 setInterval(showSlide, 5000);
 
+/* AVIS */
+
 let reviews = document.querySelectorAll(".review");
+
 let current = 0;
 
 setInterval(() => {
+
   reviews[current].classList.remove("active");
+
   current = (current + 1) % reviews.length;
+
   reviews[current].classList.add("active");
+
 }, 4000);
 
+/* POPUP */
+
 function closePopup() {
+
   document.getElementById("promo-popup").style.display = "none";
+}
+
+/* OUVERT / FERMÉ */
+
 const status = document.getElementById("shop-status");
 
 function updateStatus() {
@@ -199,14 +375,17 @@ function updateStatus() {
   const now = new Date();
 
   const day = now.getDay();
+
   const hour = now.getHours();
+
   const minutes = now.getMinutes();
 
   const currentTime = hour + minutes / 60;
 
   let open = false;
 
-  // Lundi à jeudi
+  /* LUNDI A JEUDI */
+
   if (day >= 1 && day <= 4) {
 
     if (
@@ -217,7 +396,8 @@ function updateStatus() {
     }
   }
 
-  // Vendredi
+  /* VENDREDI */
+
   if (day === 5) {
 
     if (
@@ -228,7 +408,8 @@ function updateStatus() {
     }
   }
 
-  // Samedi
+  /* SAMEDI */
+
   if (day === 6) {
 
     if (currentTime >= 9 && currentTime < 14) {
